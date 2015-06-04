@@ -1,0 +1,13 @@
+﻿{
+    "scripts":  {
+                    "version":  1
+                },
+    "feature":  {
+                    "name":  "apivalidation",
+                    "role":  "library"
+                },
+    "build":  {
+                  "solution":  "JE.ApiValidation.Library.sln",
+                  "mainproject":  "JE.ApiValidation.Library\\JE.ApiValidation.Library.csproj"
+              }
+}
