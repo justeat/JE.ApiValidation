@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.OpenRasta"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.WebApi.FluentValidation", "src\JE.ApiValidation.WebApi.FluentValidation\JE.ApiValidation.WebApi.FluentValidation.csproj", "{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Shared", "src\JE.ApiValidation.Shared\JE.ApiValidation.Shared.csproj", "{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

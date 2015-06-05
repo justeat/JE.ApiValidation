@@ -2,6 +2,7 @@
 using System.Linq;
 using FluentValidation;
 using FluentValidation.Results;
+using JE.ApiValidation.DTOs;
 using OpenRasta.DI;
 using OpenRasta.OperationModel;
 using OpenRasta.OperationModel.Interceptors;
@@ -9,7 +10,7 @@ using OpenRasta.Web;
 
 namespace JE.ApiValidation.OpenRasta
 {
-    public abstract class FluentValidationOperationInterceptor : OperationInterceptor
+    public class FluentValidationOperationInterceptor : OperationInterceptor
     {
         private readonly ICommunicationContext _context;
         private readonly IDependencyResolver _resolver;
@@ -57,7 +58,7 @@ namespace JE.ApiValidation.OpenRasta
             return false;
         }
 
-        protected virtual void LogBadRequest(IOperation operation, ResponseForInvalidRequest body)
+        protected virtual void LogBadRequest(IOperation operation, StandardErrorResponse body)
         {
 
         }

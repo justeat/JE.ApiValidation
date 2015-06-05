@@ -1,3 +1,4 @@
+using JE.ApiValidation.DTOs;
 using JE.ApiValidation.OpenRasta;
 using OpenRasta.DI;
 using OpenRasta.OperationModel;
@@ -5,14 +6,14 @@ using OpenRasta.Web;
 
 namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
 {
-    public class ConcreteFvoi : FluentValidationOperationInterceptor
+    public class ForTests : FluentValidationOperationInterceptor
     {
-        public ConcreteFvoi(IDependencyResolver resolver, ICommunicationContext context)
+        public ForTests(IDependencyResolver resolver, ICommunicationContext context)
             : base(resolver, context)
         {
         }
 
-        protected override void LogBadRequest(IOperation operation, ResponseForInvalidRequest body)
+        protected override void LogBadRequest(IOperation operation, StandardErrorResponse body)
         {
             Logged = true;
         }

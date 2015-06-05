@@ -2,6 +2,7 @@
 using System.Runtime.Serialization;
 using FluentValidation.Results;
 using JE.ApiValidation.DTOs;
+using JE.ApiValidation.Shared;
 
 namespace JE.ApiValidation.OpenRasta
 {

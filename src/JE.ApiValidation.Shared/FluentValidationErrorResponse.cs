@@ -2,7 +2,7 @@
 using FluentValidation.Results;
 using JE.ApiValidation.DTOs;
 
-namespace JE.ApiValidation.WebApi.FluentValidation
+namespace JE.ApiValidation.Shared
 {
     public abstract class FluentValidationErrorResponse : StandardErrorResponse
     {

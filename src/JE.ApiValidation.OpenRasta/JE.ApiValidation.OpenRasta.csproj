@@ -48,7 +48,6 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="FluentValidationOperationInterceptor.cs" />
-    <Compile Include="FluentValidationErrorResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResponseForInvalidRequest.cs" />
   </ItemGroup>
@@ -60,6 +59,10 @@
     <ProjectReference Include="..\JE.ApiValidation.DTOs\JE.ApiValidation.DTOs.csproj">
       <Project>{B523F88F-DFAE-43C2-A502-C1009BF3A432}</Project>
       <Name>JE.ApiValidation.DTOs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JE.ApiValidation.Shared\JE.ApiValidation.Shared.csproj">
+      <Project>{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}</Project>
+      <Name>JE.ApiValidation.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

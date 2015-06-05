@@ -104,7 +104,7 @@
     <Compile Include="ProcessingErrors\WebApi\AndSomethingThrowsAValidationException.cs" />
     <Compile Include="ProcessingErrors\WebApi\WhenActionProcessingMightThrowForRulesProcessing.cs" />
     <Compile Include="ProcessingErrors\WebApi\FilterForProcessingErrors.cs" />
-    <Compile Include="RequestValidity\OpenRasta\ConcreteFvoi.cs" />
+    <Compile Include="RequestValidity\OpenRasta\ForTests.cs" />
     <Compile Include="RequestValidity\OpenRasta\Request.cs" />
     <Compile Include="RequestValidity\OpenRasta\RulesForRequest.cs" />
     <Compile Include="RequestValidity\OpenRasta\WhenFluentValidationOperationInterceptorRuns.cs" />

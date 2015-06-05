@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using JE.ApiValidation.DTOs;
+using JE.ApiValidation.Shared;
 
 namespace JE.ApiValidation.WebApi.FluentValidation
 {

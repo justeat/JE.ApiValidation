@@ -1,5 +1,5 @@
+using System.Diagnostics;
 using JE.ApiValidation.DTOs;
-using JE.ApiValidation.OpenRasta;
 using NUnit.Framework;
 using OpenRasta.Web;
 using Shouldly;
@@ -10,7 +10,13 @@ namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
     {
         protected override Request GivenRequestBody()
         {
-            return new Request() {Email = "ksjhdf"};
+            return new Request {Email = "ksjhdf"};
+        }
+
+        [Test]
+        public void ShouldHaveLogged()
+        {
+            SUT.Logged.ShouldBe(true);
         }
 
         [Test]
@@ -28,8 +34,9 @@ namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
         [Test]
         public void ResultBodyShouldBeStandard()
         {
-            OpResult.ResponseResource.ShouldBeOfType<ResponseForInvalidRequest>();
-            var body = OpResult.ResponseResource as ResponseForInvalidRequest;
+            OpResult.ResponseResource.ShouldBeAssignableTo<StandardErrorResponse>();
+            var body = OpResult.ResponseResource as StandardErrorResponse;
+            Debug.Assert(body != null, "body != null");
             body.Code.ShouldBe((int)ErrorCodes.RequestWasInvalid);
             body.Errors.Keys.Count.ShouldBe(3);
         }

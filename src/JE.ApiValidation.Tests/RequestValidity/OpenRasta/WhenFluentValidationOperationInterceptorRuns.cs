@@ -8,7 +8,7 @@ using OpenRasta.Web;
 
 namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
 {
-    public abstract class WhenFluentValidationOperationInterceptorRuns : SpecsFor.SpecsFor<ConcreteFvoi>
+    public abstract class WhenFluentValidationOperationInterceptorRuns : SpecsFor.SpecsFor<ForTests>
     {
         protected bool Result;
         protected Request RequestBody;
@@ -21,7 +21,7 @@ namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
         {
             base.InitializeClassUnderTest();
             _context = new InMemoryCommunicationContext();
-            SUT = new ConcreteFvoi(GetMockFor<IDependencyResolver>().Object, _context);
+            SUT = new ForTests(GetMockFor<IDependencyResolver>().Object, _context);
         }
 
         protected override void Given()
