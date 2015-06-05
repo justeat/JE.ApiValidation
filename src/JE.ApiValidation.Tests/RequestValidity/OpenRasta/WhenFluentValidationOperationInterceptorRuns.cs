@@ -11,8 +11,8 @@ namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
     public abstract class WhenFluentValidationOperationInterceptorRuns : SpecsFor.SpecsFor<ForTests>
     {
         protected bool Result;
-        protected Request RequestBody;
-        protected IOperation Operation;
+        private Request _requestBody;
+        private IOperation _operation;
         private ICommunicationContext _context;
 
         protected OperationResult OpResult;
@@ -26,8 +26,8 @@ namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
 
         protected override void Given()
         {
-            RequestBody = GivenRequestBody();
-            Operation = GivenOperation();
+            _requestBody = GivenRequestBody();
+            _operation = GivenOperation();
             GivenResolverStubs();
         }
 
@@ -40,21 +40,21 @@ namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
 
         protected override void When()
         {
-            Result = SUT.BeforeExecute(Operation);
+            Result = SUT.BeforeExecute(_operation);
             OpResult = _context.OperationResult;
         }
 
-        protected virtual IOperation GivenOperation()
+        private IOperation GivenOperation()
         {
             var operation = GetMockFor<IOperation>();
             operation.Setup(x => x.Inputs).Returns(GivenOperationInputs());
             return operation.Object;
         }
 
-        protected virtual IEnumerable<InputMember> GivenOperationInputs()
+        private IEnumerable<InputMember> GivenOperationInputs()
         {
             var binder = GetMockFor<IObjectBinder>();
-            binder.Setup(x => x.BuildObject()).Returns(BindingResult.Success(RequestBody));
+            binder.Setup(x => x.BuildObject()).Returns(BindingResult.Success(_requestBody));
             yield return new InputMember(GetMockFor<IMember>().Object, binder.Object, true);
         }
     }

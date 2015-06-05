@@ -19,7 +19,7 @@ namespace JE.ApiValidation.Tests.RequestValidity.WebApi
             base.Given();
         }
 
-        protected virtual HttpRequestMessage GivenRequest()
+        private static HttpRequestMessage GivenRequest()
         {
             return new HttpRequestMessage(HttpMethod.Post, "internal/tests/request-validation")
                        {

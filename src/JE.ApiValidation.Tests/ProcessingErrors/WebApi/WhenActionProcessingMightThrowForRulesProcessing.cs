@@ -24,7 +24,7 @@ namespace JE.ApiValidation.Tests.ProcessingErrors.WebApi
             return null;
         }
 
-        protected virtual HttpRequestMessage GivenRequest()
+        private static HttpRequestMessage GivenRequest()
         {
             return new HttpRequestMessage(HttpMethod.Get, "internal/tests/validation-exception-handling");
         }

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using JE.ApiValidation.DTOs;
 using JE.ApiValidation.OpenRasta;
 using OpenRasta.DI;
@@ -16,6 +17,8 @@ namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
         protected override void LogBadRequest(IOperation operation, StandardErrorResponse body)
         {
             Logged = true;
+            Debug.Assert(operation != null);
+            Debug.Assert(body != null);
         }
 
         public bool Logged { get; private set; }

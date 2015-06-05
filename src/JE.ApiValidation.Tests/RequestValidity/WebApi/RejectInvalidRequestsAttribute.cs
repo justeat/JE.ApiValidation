@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Web.Http.Controllers;
 using JE.ApiValidation.DTOs;
 using JE.ApiValidation.WebApi;
@@ -13,6 +14,9 @@ namespace JE.ApiValidation.Tests.RequestValidity.WebApi
         protected override void LogBadRequest(string message, HttpActionContext context, StandardErrorResponse response)
         {
             Logged = true;
+            Debug.Assert(message != null);
+            Debug.Assert(context != null);
+            Debug.Assert(response != null);
         }
     }
 }
