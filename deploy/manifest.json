@@ -1,4 +1,4 @@
-﻿{
+{
     "scripts":  {
                     "version":  1
                 },
@@ -8,6 +8,6 @@
                 },
     "build":  {
                   "solution":  "JE.ApiValidation.Library.sln",
-                  "mainproject":  "JE.ApiValidation.Library\\JE.ApiValidation.Library.csproj"
+                  "mainproject":  "JE.ApiValidation.DTOs\\JE.ApiValidation.DTOs.csproj"
               }
 }

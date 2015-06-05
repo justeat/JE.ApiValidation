@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.je-labs.com/Peter-Mounce/JE.ApiValidation.Library/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.je-labs.com/Peter-Mounce/JE.ApiValidation.Library/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>https://github.je-labs.com/Peter-Mounce/JE.ApiValidation.Library/blob/master/CHANGELOG.md</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>api validation</tags>
+  </metadata>
+</package>
