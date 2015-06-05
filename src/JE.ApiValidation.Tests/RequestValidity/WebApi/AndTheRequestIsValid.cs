@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using Shouldly;
 
-namespace JE.ApiValidation.Tests.RequestValidity
+namespace JE.ApiValidation.Tests.RequestValidity.WebApi
 {
     public class AndTheRequestIsValid : WhenRequestsAreCheckedForValidity
     {

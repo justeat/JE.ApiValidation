@@ -6,7 +6,7 @@ using JE.ApiValidation.DTOs;
 using JE.ApiValidation.WebApi;
 using SpecsFor;
 
-namespace JE.ApiValidation.Tests.RequestValidity
+namespace JE.ApiValidation.Tests.RequestValidity.WebApi
 {
     public abstract class WhenRequestsAreCheckedForValidity : SpecsFor<ConcreteRejectInvalidRequestsAttribute>
     {

@@ -3,7 +3,7 @@ using System.Web.Http.ModelBinding;
 using NUnit.Framework;
 using Shouldly;
 
-namespace JE.ApiValidation.Tests.RequestValidity
+namespace JE.ApiValidation.Tests.RequestValidity.WebApi
 {
     public class AndTheRequestIsInvalid : WhenRequestsAreCheckedForValidity
     {
