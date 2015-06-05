@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Tests", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.OpenRasta", "src\JE.ApiValidation.OpenRasta\JE.ApiValidation.OpenRasta.csproj", "{5DD2AC4D-FB18-4BD8-8B92-DA93327E3070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.WebApi.FluentValidation", "src\JE.ApiValidation.WebApi.FluentValidation\JE.ApiValidation.WebApi.FluentValidation.csproj", "{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{5DD2AC4D-FB18-4BD8-8B92-DA93327E3070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DD2AC4D-FB18-4BD8-8B92-DA93327E3070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DD2AC4D-FB18-4BD8-8B92-DA93327E3070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

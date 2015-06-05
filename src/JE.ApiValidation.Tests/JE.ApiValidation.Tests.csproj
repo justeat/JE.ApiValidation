@@ -100,6 +100,10 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="ObjectExtensions.cs" />
+    <Compile Include="ProcessingErrors\WebApi\AndNoValidationExceptionIsThrown.cs" />
+    <Compile Include="ProcessingErrors\WebApi\AndSomethingThrowsAValidationException.cs" />
+    <Compile Include="ProcessingErrors\WebApi\WhenActionProcessingMightThrowForRulesProcessing.cs" />
+    <Compile Include="ProcessingErrors\WebApi\FilterForProcessingErrors.cs" />
     <Compile Include="RequestValidity\OpenRasta\ConcreteFvoi.cs" />
     <Compile Include="RequestValidity\OpenRasta\Request.cs" />
     <Compile Include="RequestValidity\OpenRasta\RulesForRequest.cs" />
@@ -125,6 +129,10 @@
     <ProjectReference Include="..\JE.ApiValidation.OpenRasta\JE.ApiValidation.OpenRasta.csproj">
       <Project>{5DD2AC4D-FB18-4BD8-8B92-DA93327E3070}</Project>
       <Name>JE.ApiValidation.OpenRasta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JE.ApiValidation.WebApi.FluentValidation\JE.ApiValidation.WebApi.FluentValidation.csproj">
+      <Project>{EF3C6044-F7FD-4222-9703-AC69FB4D9D86}</Project>
+      <Name>JE.ApiValidation.WebApi.FluentValidation</Name>
     </ProjectReference>
     <ProjectReference Include="..\JE.ApiValidation.WebApi\JE.ApiValidation.WebApi.csproj">
       <Project>{E10837F6-CC59-49C6-AC94-7C70E4E6E00F}</Project>
