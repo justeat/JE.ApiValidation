@@ -2,13 +2,11 @@
 using System.Threading;
 using System.Web.Http.Controllers;
 using System.Web.Http.ModelBinding;
-using JE.ApiValidation.DTOs;
-using JE.ApiValidation.WebApi;
 using SpecsFor;
 
 namespace JE.ApiValidation.Tests.RequestValidity.WebApi
 {
-    public abstract class WhenRequestsAreCheckedForValidity : SpecsFor<ConcreteRejectInvalidRequestsAttribute>
+    public abstract class WhenRequestsAreCheckedForValidity : SpecsFor<RejectInvalidRequestsAttribute>
     {
         protected HttpActionContext Context;
 
@@ -39,16 +37,6 @@ namespace JE.ApiValidation.Tests.RequestValidity.WebApi
         protected override void When()
         {
             SUT.OnActionExecutingAsync(Context, new CancellationToken());
-        }
-    }
-
-    public class ConcreteRejectInvalidRequestsAttribute : RejectInvalidRequestsAttribute
-    {
-        public bool Logged { get; private set; }
-
-        protected override void LogBadRequest(string message, HttpActionContext context, StandardErrorResponse response)
-        {
-            Logged = true;
         }
     }
 }

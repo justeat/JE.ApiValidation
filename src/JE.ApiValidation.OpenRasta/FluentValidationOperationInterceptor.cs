@@ -57,6 +57,9 @@ namespace JE.ApiValidation.OpenRasta
             return false;
         }
 
-        protected abstract void LogBadRequest(IOperation operation, ResponseForInvalidRequest body);
+        protected virtual void LogBadRequest(IOperation operation, ResponseForInvalidRequest body)
+        {
+
+        }
     }
 }

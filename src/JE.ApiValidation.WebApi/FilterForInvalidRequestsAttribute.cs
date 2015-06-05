@@ -11,7 +11,7 @@ namespace JE.ApiValidation.WebApi
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     // ReSharper disable UnusedMember.Global
-    public abstract class RejectInvalidRequestsAttribute : ActionFilterAttribute
+    public class FilterForInvalidRequestsAttribute : ActionFilterAttribute
         // ReSharper restore UnusedMember.Global
     {
         public override void OnActionExecuting(HttpActionContext context)
@@ -39,6 +39,9 @@ namespace JE.ApiValidation.WebApi
             context.Response = context.Request.CreateResponse(HttpStatusCode.BadRequest, response);
         }
 
-        protected abstract void LogBadRequest(string message, HttpActionContext context, StandardErrorResponse response);
+        protected virtual void LogBadRequest(string message, HttpActionContext context, StandardErrorResponse response)
+        {
+
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace JE.ApiValidation.WebApi.FluentValidation
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     // ReSharper disable UnusedMember.Global
-    public abstract class BaseResponseProcessingErrorAttribute : ExceptionFilterAttribute
+    public class ResponseProcessingErrorAttribute : ExceptionFilterAttribute
     // ReSharper restore UnusedMember.Global
     {
         public override void OnException(HttpActionExecutedContext context)
@@ -40,6 +40,9 @@ namespace JE.ApiValidation.WebApi.FluentValidation
             context.Response = context.Request.CreateResponse(HttpStatusCode.BadRequest, response);
         }
 
-        protected abstract void LogBadRequest(string message, HttpActionExecutedContext context, StandardErrorResponse response);
+        protected virtual void LogBadRequest(string message, HttpActionExecutedContext context, StandardErrorResponse response)
+        {
+
+        }
     }
 }

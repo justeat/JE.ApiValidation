@@ -114,6 +114,7 @@
     <Compile Include="RequestValidity\OpenRasta\WhenValidatorsAreFound.cs" />
     <Compile Include="RequestValidity\WebApi\AndTheRequestIsInvalid.cs" />
     <Compile Include="RequestValidity\WebApi\AndTheRequestIsValid.cs" />
+    <Compile Include="RequestValidity\WebApi\RejectInvalidRequestsAttribute.cs" />
     <Compile Include="RequestValidity\WebApi\WhenRequestsAreCheckedForValidity.cs" />
     <Compile Include="ContextUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

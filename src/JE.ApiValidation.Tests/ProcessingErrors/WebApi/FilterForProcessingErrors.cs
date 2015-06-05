@@ -4,7 +4,9 @@ using JE.ApiValidation.WebApi.FluentValidation;
 
 namespace JE.ApiValidation.Tests.ProcessingErrors.WebApi
 {
-    public class FilterForProcessingErrors : BaseResponseProcessingErrorAttribute
+    // ReSharper disable ClassNeverInstantiated.Global
+    public class FilterForProcessingErrors : ResponseProcessingErrorAttribute
+        // ReSharper restore ClassNeverInstantiated.Global
     {
         protected override void LogBadRequest(string message, HttpActionExecutedContext context, StandardErrorResponse response)
         {
