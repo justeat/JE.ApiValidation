@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Moq;
 using OpenRasta.Binding;
 using OpenRasta.DI;
 using OpenRasta.Hosting.InMemory;
