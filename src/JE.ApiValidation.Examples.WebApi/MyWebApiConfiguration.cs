@@ -1,8 +1,5 @@
-﻿using System;
-using System.Web.Http;
-using FluentValidation;
+﻿using System.Web.Http;
 using FluentValidation.WebApi;
-using JE.ApiValidation.Examples.WebApi.Widgets;
 using JE.ApiValidation.WebApi;
 using JE.ApiValidation.WebApi.FluentValidation;
 
@@ -24,7 +21,7 @@ namespace JE.ApiValidation.Examples.WebApi
 
         private void ConfigureRequestValidation()
         {
-            FluentValidationModelValidatorProvider.Configure(this, provider => provider.ValidatorFactory = new DumbValidatorFactory());
+            FluentValidationModelValidatorProvider.Configure(this, provider => provider.ValidatorFactory = new ForExampleSitesValidatorFactoryButDontUseThisUseAContainer());
             Filters.Add(new FilterForInvalidRequestsAttribute());
         }
 
@@ -34,14 +31,6 @@ namespace JE.ApiValidation.Examples.WebApi
                 "DefaultApi",
                 "api/{controller}/{id}",
                 new { id = RouteParameter.Optional });
-        }
-    }
-
-    internal class DumbValidatorFactory : ValidatorFactoryBase
-    {
-        public override IValidator CreateInstance(Type validatorType)
-        {
-            return new RulesForWidgetRequests();
         }
     }
 }
