@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace JE.ApiValidation.Examples.WebApi.Widgets
+namespace JE.ApiValidation.Examples.Widgets
 {
     public class RulesForWidgetRequests : AbstractValidator<Widget>
     {

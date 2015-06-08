@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using System.Web.Http;
 using FluentValidation;
+using JE.ApiValidation.Examples.Widgets;
 
 namespace JE.ApiValidation.Examples.WebApi.Widgets
 {

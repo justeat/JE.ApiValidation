@@ -1,5 +1,13 @@
 # JE.ApiValidation.Library
 
+## Features
+### Standard error response DTO
+Clients shouldn't have to parse different response bodies to find out what went wrong.
+
+ Request validation can happen outside of your application logic (in a filter, or interceptor), making your code easier to understand.
+* Error processing can happen outside of your application logic, by running `_validator.ValidateAndThrow(thingToProcess);` - the `ValidationException` is caught and transformed to the standard error response DTO
+* A hook to log what went wrong before serving back the bad request.
+
 ## Motivations
 * API consumers want to be able to handle errors in a standard way
   * anything else is wasted time
@@ -8,31 +16,16 @@
     * supporting
     * operating
 
+## Development
+
+Please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+* [CI](http://ci.je-labs.com/project.html?projectId=Jalfrezi_Packages_JeApiValidationLibrary)
+
 ## Getting Started
 
-1. Make sure the sample works
+### WebApi
+See the example in `src/JE.ApiValidation.Examples.WebApi`, and the tests for that in `src/JE.ApiValidation.Examples.WebApi.Tests`.
 
-```
-git clone git@github.je-labs.com:sys-automation/deploymentscripts.git c:\justeat\bootstrapping\deploymentscripts
-git clone git@github.je-labs.com:sys-automation/buildscripts.git  c:\justeat\bootstrapping\buildscripts
-git clone git@github.je-labs.com:sys-automation/JE.ApiValidation.Library.git c:\_github\JE.ApiValidation.Library
-
-cd c:\_github\JE.ApiValidation.Library
-
-.\build.ps1
-.\package.ps1
-.\deploy.ps1
-```
-
-2. Add your application code
-  1. solution file should be at the root of the project
-  2. projects should be in the src folder
-
-3. Update the buildscripts and deployscripts configuration
-    1. [deploy/manifest.json](deploy/manifest.json)
-    2. [deploy/secure](deploy/secure) - add your connection strings, or delete this folder
-    3. [deploy/configs](deploy/configs) - add your app config, or delete this folder
-    4. [version.txt](version.txt) - your application version number in the format `^\d+\.\d+\.\d+$`
-
-4. Use the [Build Scripts Master](http://ci.je-labs.com/admin/editBuild.html?id=template:NetBuildScriptsMaster) to create a Team City Build Configuration
-
+### OpenRasta
+PR for example gratefully accepted. It should be possible to re-use the same tests via `OpenRasta.Hosting.Owin`.

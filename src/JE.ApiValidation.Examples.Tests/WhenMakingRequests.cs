@@ -3,7 +3,6 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using JE.ApiValidation.DTOs;
-using JE.ApiValidation.Examples.WebApi;
 using Microsoft.Owin.Testing;
 using Newtonsoft.Json;
 using NUnit.Framework;
@@ -11,12 +10,12 @@ using Shouldly;
 
 namespace JE.ApiValidation.Examples.Tests
 {
-    public class WhenMakingRequests
+    public abstract class WhenMakingRequests<TApiStartup>
     {
         [Test]
         public async void WhenValidShouldGet200Ok()
         {
-            using (var server = TestServer.Create<Startup>())
+            using (var server = TestServer.Create<TApiStartup>())
             {
                 var response = await HttpResponseMessage(server, new { Name = "foo" }).ConfigureAwait(false);
 
@@ -27,7 +26,7 @@ namespace JE.ApiValidation.Examples.Tests
         [Test]
         public async void WhenRequestIsInvalidShouldGet400BadRequestWithStandardErrorResponse()
         {
-            using (var server = TestServer.Create<Startup>())
+            using (var server = TestServer.Create<TApiStartup>())
             {
                 var response = await HttpResponseMessage(server, new { Name = "" }).ConfigureAwait(false);
 
@@ -42,7 +41,7 @@ namespace JE.ApiValidation.Examples.Tests
         [Test]
         public async void WhenThereIsAnErrorDuringResponseProcessingShouldGet400BadRequestWithStandardErrorResponse()
         {
-            using (var server = TestServer.Create<Startup>())
+            using (var server = TestServer.Create<TApiStartup>())
             {
                 var response = await HttpResponseMessage(server, new { Name = "wibble" }).ConfigureAwait(false);
 

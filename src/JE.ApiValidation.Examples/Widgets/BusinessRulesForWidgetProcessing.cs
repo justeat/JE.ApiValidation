@@ -2,7 +2,7 @@
 using System.Linq;
 using FluentValidation;
 
-namespace JE.ApiValidation.Examples.WebApi.Widgets
+namespace JE.ApiValidation.Examples.Widgets
 {
     public class BusinessRulesForWidgetProcessing : AbstractValidator<InternalRepresentationOfWidget>
     {
