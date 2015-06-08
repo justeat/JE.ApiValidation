@@ -14,7 +14,7 @@ namespace JE.ApiValidation.Examples.OpenRasta
             {
                 ResourceSpace.Has.ResourcesOfType<object>().AtUri("api/widgets").HandledBy<WidgetsHandler>().TranscodedBy<JsonCodec>();
 
-                ResourceSpace.Uses.CustomDependency<IOperationInterceptor, FluentValidationOperationInterceptor>(DependencyLifetime.Transient);
+                ResourceSpace.Uses.CustomDependency<IOperationInterceptor, FluentValidationRequestValidationOperationInterceptor>(DependencyLifetime.Transient);
                 ResourceSpace.Uses.CustomDependency<IOperationInterceptor, FluentValidationResponseProcessingOperationInterceptor>(DependencyLifetime.Transient);
             }
         }

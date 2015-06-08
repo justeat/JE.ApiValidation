@@ -7,7 +7,7 @@ using OpenRasta.Web;
 
 namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
 {
-    public class ForTests : FluentValidationOperationInterceptor
+    public class ForTests : FluentValidationRequestValidationOperationInterceptor
     {
         public ForTests(IDependencyResolver resolver, ICommunicationContext context)
             : base(resolver, context)

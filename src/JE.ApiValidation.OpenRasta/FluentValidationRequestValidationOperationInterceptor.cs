@@ -10,12 +10,12 @@ using OpenRasta.Web;
 
 namespace JE.ApiValidation.OpenRasta
 {
-    public class FluentValidationOperationInterceptor : OperationInterceptor
+    public class FluentValidationRequestValidationOperationInterceptor : OperationInterceptor
     {
         private readonly ICommunicationContext _context;
         private readonly IDependencyResolver _resolver;
 
-        public FluentValidationOperationInterceptor(IDependencyResolver resolver, ICommunicationContext context)
+        public FluentValidationRequestValidationOperationInterceptor(IDependencyResolver resolver, ICommunicationContext context)
         {
             _resolver = resolver;
             _context = context;
