@@ -10,7 +10,7 @@ namespace JE.ApiValidation.OpenRasta
     public class ResponseForInvalidRequest : FluentValidationErrorResponse
     {
         public ResponseForInvalidRequest(IEnumerable<ValidationFailure> errors)
-            : base((int)ErrorCodes.RequestWasInvalid, "The request is invalid.", errors)
+            : base((int)ErrorCodes.RequestWasInvalid, "The request is invalid", errors)
         {
         }
     }
