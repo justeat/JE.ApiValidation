@@ -1,8 +1,7 @@
-﻿using FluentValidation;
+using FluentValidation;
 using JE.ApiValidation.DTOs;
-using JE.ApiValidation.Shared;
 
-namespace JE.ApiValidation.WebApi.FluentValidation
+namespace JE.ApiValidation.Shared
 {
     public class ResponseForProcessingError : FluentValidationErrorResponse
     {

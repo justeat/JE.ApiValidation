@@ -99,18 +99,25 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="OpenRasta\AgainstOpenRasta.cs" />
     <Compile Include="WebApi\AgainstWebApi.cs" />
     <Compile Include="WhenMakingRequests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JE.ApiValidation.DTOs\JE.ApiValidation.DTOs.csproj">
       <Project>{B523F88F-DFAE-43C2-A502-C1009BF3A432}</Project>
       <Name>JE.ApiValidation.DTOs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JE.ApiValidation.Examples.OpenRasta\JE.ApiValidation.Examples.OpenRasta.csproj">
+      <Project>{39b4ae31-4638-48ee-9af8-480748783b99}</Project>
+      <Name>JE.ApiValidation.Examples.OpenRasta</Name>
     </ProjectReference>
     <ProjectReference Include="..\JE.ApiValidation.Examples.WebApi\JE.ApiValidation.Examples.WebApi.csproj">
       <Project>{FD248C4C-8786-46ED-BA62-EE705B76593F}</Project>

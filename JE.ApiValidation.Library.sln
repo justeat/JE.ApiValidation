@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Examples.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Examples", "src\JE.ApiValidation.Examples\JE.ApiValidation.Examples.csproj", "{C96F07B3-EA7B-45F3-924C-E49E73228BB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Examples.OpenRasta", "src\JE.ApiValidation.Examples.OpenRasta\JE.ApiValidation.Examples.OpenRasta.csproj", "{39B4AE31-4638-48EE-9AF8-480748783B99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{C96F07B3-EA7B-45F3-924C-E49E73228BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C96F07B3-EA7B-45F3-924C-E49E73228BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C96F07B3-EA7B-45F3-924C-E49E73228BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B4AE31-4638-48EE-9AF8-480748783B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B4AE31-4638-48EE-9AF8-480748783B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B4AE31-4638-48EE-9AF8-480748783B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B4AE31-4638-48EE-9AF8-480748783B99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,5 +89,6 @@ Global
 		{FD248C4C-8786-46ED-BA62-EE705B76593F} = {9C01A559-5C73-4842-8D8C-DC1263937FDB}
 		{3A92E220-711F-41EF-BA5F-3024CD8293DB} = {9C01A559-5C73-4842-8D8C-DC1263937FDB}
 		{C96F07B3-EA7B-45F3-924C-E49E73228BB5} = {9C01A559-5C73-4842-8D8C-DC1263937FDB}
+		{39B4AE31-4638-48EE-9AF8-480748783B99} = {9C01A559-5C73-4842-8D8C-DC1263937FDB}
 	EndGlobalSection
 EndGlobal

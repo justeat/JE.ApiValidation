@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Web.Http.Filters;
 using FluentValidation;
 using JE.ApiValidation.DTOs;
+using JE.ApiValidation.Shared;
 
 namespace JE.ApiValidation.WebApi.FluentValidation
 {
