@@ -37,8 +37,7 @@ namespace JE.ApiValidation.OpenRasta
                                            Value =
                                                new OperationResult.BadRequest
                                                    {
-                                                       ResponseResource =
-                                                           responseBody
+                                                       ResponseResource = responseBody
                                                    }
                                        }
                                };

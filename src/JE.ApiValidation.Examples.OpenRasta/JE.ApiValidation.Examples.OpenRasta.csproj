@@ -97,6 +97,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="JsonCodec.cs" />
     <Compile Include="MyOpenRastaDependencyResolverAccessor.cs" />
     <Compile Include="MyOpenRastaConfiguration.cs" />
