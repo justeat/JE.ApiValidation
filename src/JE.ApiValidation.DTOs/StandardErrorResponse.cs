@@ -4,13 +4,17 @@ using System.Runtime.Serialization;
 namespace JE.ApiValidation.DTOs
 {
     [DataContract]
-    public abstract class StandardErrorResponse
+    public class StandardErrorResponse
     {
-        protected StandardErrorResponse(int code = (int)ErrorCodes.Unknown, string message = "Unknown error")
+        public StandardErrorResponse()
+        {
+            Errors = new Dictionary<string, IList<Problem>>();
+        }
+
+        public StandardErrorResponse(int code = (int)ErrorCodes.Unknown, string message = "Unknown error") : this()
         {
             Code = code;
             Message = message;
-            Errors = new Dictionary<string, IList<Problem>>();
         }
 
         [DataMember]

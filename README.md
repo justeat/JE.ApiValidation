@@ -1,4 +1,12 @@
-﻿# Build Scripts
+# JE.ApiValidation.Library
+
+## Motivations
+* API consumers want to be able to handle errors in a standard way
+  * anything else is wasted time
+    * implementing
+    * debugging
+    * supporting
+    * operating
 
 ## Getting Started
 

@@ -25,6 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.WebApi.Flu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Shared", "src\JE.ApiValidation.Shared\JE.ApiValidation.Shared.csproj", "{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{9C01A559-5C73-4842-8D8C-DC1263937FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Examples.WebApi", "src\JE.ApiValidation.Examples.WebApi\JE.ApiValidation.Examples.WebApi.csproj", "{FD248C4C-8786-46ED-BA62-EE705B76593F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JE.ApiValidation.Examples.Tests", "src\JE.ApiValidation.Examples.Tests\JE.ApiValidation.Examples.Tests.csproj", "{3A92E220-711F-41EF-BA5F-3024CD8293DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,8 +61,20 @@ Global
 		{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD248C4C-8786-46ED-BA62-EE705B76593F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD248C4C-8786-46ED-BA62-EE705B76593F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD248C4C-8786-46ED-BA62-EE705B76593F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD248C4C-8786-46ED-BA62-EE705B76593F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A92E220-711F-41EF-BA5F-3024CD8293DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A92E220-711F-41EF-BA5F-3024CD8293DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A92E220-711F-41EF-BA5F-3024CD8293DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A92E220-711F-41EF-BA5F-3024CD8293DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD248C4C-8786-46ED-BA62-EE705B76593F} = {9C01A559-5C73-4842-8D8C-DC1263937FDB}
+		{3A92E220-711F-41EF-BA5F-3024CD8293DB} = {9C01A559-5C73-4842-8D8C-DC1263937FDB}
 	EndGlobalSection
 EndGlobal
