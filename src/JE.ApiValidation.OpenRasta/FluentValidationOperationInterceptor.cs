@@ -15,7 +15,7 @@ namespace JE.ApiValidation.OpenRasta
         private readonly ICommunicationContext _context;
         private readonly IDependencyResolver _resolver;
 
-        protected FluentValidationOperationInterceptor(IDependencyResolver resolver, ICommunicationContext context)
+        public FluentValidationOperationInterceptor(IDependencyResolver resolver, ICommunicationContext context)
         {
             _resolver = resolver;
             _context = context;
