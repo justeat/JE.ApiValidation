@@ -28,7 +28,8 @@ Each filter or interceptor has a virtual method to allow you to log a warning in
 
 Please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-* [CI](http://ci.je-labs.com/project.html?projectId=Jalfrezi_Packages_JeApiValidationLibrary)
+* [CI (for now, internal to JE only; moving to appveyor soon)](http://ci.je-labs.com/project.html?projectId=Jalfrezi_Packages_JeApiValidationLibrary)
+* To build, currently, use Visual Studio. We plan to open-source our build scripts, but haven't yet.
 
 ## Getting Started
 
