@@ -1,4 +1,4 @@
-# JE.ApiValidation.Library
+# JE.ApiValidation
 
 ## Features
 ### Standard error response DTO
