@@ -7,7 +7,7 @@
                     "role":  "library"
                 },
     "build":  {
-                  "solution":  "JE.ApiValidation.Library.sln",
+                  "solution":  "JE.ApiValidation.sln",
                   "mainproject":  "JE.ApiValidation.DTOs\\JE.ApiValidation.DTOs.csproj"
               }
 }
