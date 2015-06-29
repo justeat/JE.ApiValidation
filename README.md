@@ -1,5 +1,7 @@
 # JE.ApiValidation
 
+[![Build status](https://ci.appveyor.com/api/projects/status/6wigrr8a3b99mn0s?svg=true)](https://ci.appveyor.com/project/justeattech/je-apivalidation)
+
 ## Features
 ### Standard error response DTO
 * Clients shouldn't have to parse different response bodies to find out what went wrong.
