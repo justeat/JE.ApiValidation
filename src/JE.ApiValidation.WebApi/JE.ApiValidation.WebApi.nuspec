@@ -12,6 +12,6 @@
     <description>$description$</description>
     <releaseNotes>https://github.com/justeat/JE.ApiValidation/blob/master/CHANGELOG.md</releaseNotes>
     <copyright>Copyright 2015</copyright>
-    <tags>api validation webapi</tags>
+    <tags>je-apivalidation api validation webapi</tags>
   </metadata>
 </package>
