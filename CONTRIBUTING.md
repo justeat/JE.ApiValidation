@@ -18,10 +18,13 @@ Note that the `JE.ApiValidation.DTOs` assembly is a contract that various client
 * CI should be green on master
 * Bump the version number in CI - follow [SemVer rules](http://semver.org)
 * Update the CHANGELOG.md
-* Create a tag of master matching the version number and push it
+* Create a tag of master matching the version number, branch from that, and push it
 ```shell
 git tag -a v1.2.3 -m "Release v1.2.3"
-git push --tags upstream
+git checkout v1.2.3
+# appveyor doesn't yet support deploy-from-tag other than github-releases
+git checkout -b release-1.2.3
+git push --tags upstream -u release-1.2.3
 ```
 * CI should
   * build the tag
