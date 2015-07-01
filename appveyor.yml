@@ -15,20 +15,13 @@ build:
   parallel: true
   verbosity: minimal
 artifacts:
-- path: '*nupkg'
+- path: '**\*.nupkg'
   name: Nuget
 deploy:
 - provider: NuGet
   api_key:
     secure: 6MzbzEs4YdJKS67Gio5gEO8mNKmwfC4UHTCmECZ1KOutI6ndm4vAECazmVNB6an7
-  artifact: '*nupkg'
-  on:
-    branch: /release-\d+\.\d+\.\d+/
-- provider: GitHub
-  tag: v$(appveyor_build_version)
-  auth_token:
-    secure: baGcokT/eXrx8B//7faaAAaXz8p44qklJXHH2ioXNUzIHz949ZyGxRWUn1Ae+BJq
-  artifact: '*nupkg'
+  artifact: /.*nupkg/
   on:
     branch: /release-\d+\.\d+\.\d+/
 notifications:
