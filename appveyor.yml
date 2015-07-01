@@ -15,7 +15,7 @@ build:
   parallel: true
   verbosity: minimal
 artifacts:
-- path: '**\*.nupkg'
+- path: '**\$(APPVEYOR_PROJECT_NAME)*.nupkg'
   name: Nuget
 deploy:
 - provider: NuGet
