@@ -25,7 +25,7 @@ write-host "Tagging & branching. tag: $tag / branch: $release" -foregroundcolor 
 & git checkout -b $release
 # TODO: bounty - do this in code against api
 # http://www.appveyor.com/docs/api/projects-builds#update-project
-write-host "We'll pause now while you remember to bump the version number in CI ($ci/settings) to match the version you're releasing ;-)"
+write-host "We'll pause now while you remember to bump the version number in CI ($ci/settings) AND appveyor.yml to match the version you're releasing ;-)"
 read-host "hit enter when you've done that..."
 write-host "Pushing" -foregroundcolor green
 & git push --tags upstream -u $release
