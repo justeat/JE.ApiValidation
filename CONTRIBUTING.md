@@ -12,3 +12,18 @@ Note that the `JE.ApiValidation.DTOs` assembly is a contract that various client
 * Flag breaking changes in your PR description
 * Add a comment linking to passing tests in CI, proof in Kibana dashboards ("share temporary"), etc
 * Link to any specifications / JIRAs that you're working against if applicable
+* CI should be green!
+
+## Releases
+* CI should be green on master
+* Bump the version number in CI - follow [SemVer rules](http://semver.org)
+* Update the CHANGELOG.md
+* Create a tag of master matching the version number and push it
+```shell
+git tag -a v1.2.3 -m "Release v1.2.3"
+git push --tags upstream
+```
+* CI should
+  * build the tag
+  * push nuget packages to nuget.org
+  * push artifacts to github.com's releases view
