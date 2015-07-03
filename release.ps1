@@ -20,15 +20,14 @@ write-host "Stashing any work and checking out master" -foregroundcolor green
 & git stash
 & git checkout master
 write-host "We'll pause now while you remember to bump the version number in CI ($ci_uri/settings) AND appveyor.yml to match the version you're releasing ($version) ;-)"
+write-host "  TODO: bounty - do this in code against appveyor's api" -foregroundcolor red
+write-host "  http://www.appveyor.com/docs/api/projects-builds#update-project" -foregroundcolor red
 read-host "hit enter when you've done that..."
 write-host "Tagging & branching. tag: $tag / branch: $release" -foregroundcolor green
 & git tag -a $tag -m "Release $tag"
 & git checkout $tag
-# & git checkout -b $release
-# TODO: bounty - do this in code against api
-# http://www.appveyor.com/docs/api/projects-builds#update-project
 write-host "Pushing" -foregroundcolor green
-& git push --tags upstream# -u $release
+& git push --tags upstream
 write-host "Done."
 write-host "Check $ci_uri"
 & git checkout master
