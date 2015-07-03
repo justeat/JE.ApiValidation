@@ -1,13 +1,13 @@
 {
-    "scripts":  {
-                    "version":  1
-                },
-    "feature":  {
-                    "name":  "apivalidation",
-                    "role":  "library"
-                },
-    "build":  {
-                  "solution":  "JE.ApiValidation.sln",
-                  "mainproject":  "JE.ApiValidation.DTOs\\JE.ApiValidation.DTOs.csproj"
-              }
+  "scripts": {
+    "version": 1
+  },
+  "feature": {
+    "name": "apivalidation",
+    "role": "library"
+  },
+  "build": {
+    "solution": "JE.ApiValidation.sln",
+    "mainproject": "JE.ApiValidation.DTOs\\JE.ApiValidation.DTOs.csproj"
+  }
 }
