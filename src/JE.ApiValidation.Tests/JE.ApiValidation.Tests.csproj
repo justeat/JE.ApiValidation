@@ -105,13 +105,16 @@
     <Compile Include="ProcessingErrors\WebApi\WhenActionProcessingMightThrowForRulesProcessing.cs" />
     <Compile Include="ProcessingErrors\WebApi\FilterForProcessingErrors.cs" />
     <Compile Include="RequestValidity\OpenRasta\ForTests.cs" />
-    <Compile Include="RequestValidity\OpenRasta\Request.cs" />
-    <Compile Include="RequestValidity\OpenRasta\RulesForRequest.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="RequestValidity\StructureMap\WhenNoValidatorExistsForType.cs" />
+    <Compile Include="RequestValidity\StructureMap\WhenValidatorExistsForType.cs" />
+    <Compile Include="RulesForRequest.cs" />
     <Compile Include="RequestValidity\OpenRasta\WhenFluentValidationOperationInterceptorRuns.cs" />
     <Compile Include="RequestValidity\OpenRasta\WhenRequestIsInvalid.cs" />
     <Compile Include="RequestValidity\OpenRasta\WhenRequestIsValid.cs" />
     <Compile Include="RequestValidity\OpenRasta\WhenThereAreNoValidatorsForParameters.cs" />
     <Compile Include="RequestValidity\OpenRasta\WhenValidatorsAreFound.cs" />
+    <Compile Include="RequestValidity\StructureMap\WhenValidatorsAreLoadedFromStructureMap.cs" />
     <Compile Include="RequestValidity\WebApi\AndTheRequestIsInvalid.cs" />
     <Compile Include="RequestValidity\WebApi\AndTheRequestIsValid.cs" />
     <Compile Include="RequestValidity\WebApi\RejectInvalidRequestsAttribute.cs" />
@@ -127,6 +130,10 @@
       <Project>{B523F88F-DFAE-43C2-A502-C1009BF3A432}</Project>
       <Name>JE.ApiValidation.DTOs</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JE.ApiValidation.FluentValidation.StructureMap\JE.ApiValidation.FluentValidation.StructureMap.csproj">
+      <Project>{34b7aa52-ae22-49c8-a093-1ed1dbaa2ef7}</Project>
+      <Name>JE.ApiValidation.FluentValidation.StructureMap</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JE.ApiValidation.OpenRasta\JE.ApiValidation.OpenRasta.csproj">
       <Project>{5DD2AC4D-FB18-4BD8-8B92-DA93327E3070}</Project>
       <Name>JE.ApiValidation.OpenRasta</Name>
@@ -140,6 +147,7 @@
       <Name>JE.ApiValidation.WebApi</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
