@@ -13,5 +13,11 @@
     <releaseNotes>https://github.com/justeat/JE.ApiValidation/blob/master/CHANGELOG.md</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>je-apivalidation api validation webapi</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi" version="5.2.3" />
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3" />
+      <dependency id="JE.ApiValidation.DTOs" version="$version$" />
+    </dependencies>
   </metadata>
 </package>
