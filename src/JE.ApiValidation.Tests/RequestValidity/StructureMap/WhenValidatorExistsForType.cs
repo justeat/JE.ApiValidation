@@ -6,9 +6,9 @@ namespace JE.ApiValidation.Tests.RequestValidity.StructureMap
     public class WhenValidatorExistsForType : WhenValidatorsAreLoadedFromStructureMap
     {
         [Test]
-        public void GivenRequestingValidatorForTypeThatIsRegistered()
+        public void ShouldReturnAbstractValidatorImplementedForType()
         {
-            var result = ValidatorFactory.CreateInstance(typeof (Request));
+            var result = ValidatorFactory.CreateInstance(typeof(Request));
 
             result.ShouldNotBeNull();
             result.ShouldBeType<RulesForRequest>();

@@ -107,6 +107,7 @@
     <Compile Include="RequestValidity\OpenRasta\ForTests.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="RequestValidity\StructureMap\WhenNoValidatorExistsForType.cs" />
+    <Compile Include="RequestValidity\StructureMap\WhenTryToGetValidatorForNullType.cs" />
     <Compile Include="RequestValidity\StructureMap\WhenValidatorExistsForType.cs" />
     <Compile Include="RulesForRequest.cs" />
     <Compile Include="RequestValidity\OpenRasta\WhenFluentValidationOperationInterceptorRuns.cs" />

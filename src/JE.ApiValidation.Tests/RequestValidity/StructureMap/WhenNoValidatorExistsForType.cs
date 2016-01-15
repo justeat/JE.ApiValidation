@@ -6,13 +6,12 @@ namespace JE.ApiValidation.Tests.RequestValidity.StructureMap
     public class WhenNoValidatorExistsForType : WhenValidatorsAreLoadedFromStructureMap
     {
         [Test]
-        public void GivenThatThereIsNotAValidatorForType()
+        public void ShouldReturnNull()
         {
-            var result = ValidatorFactory.GetValidator(typeof(UnValidatedClass));
+            var result = ValidatorFactory.CreateInstance(typeof(UnValidatedClass));
 
             result.ShouldBeNull();
         }
-
 
         private class UnValidatedClass
         {
