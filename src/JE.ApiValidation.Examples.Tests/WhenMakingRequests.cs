@@ -56,6 +56,8 @@ namespace JE.ApiValidation.Examples.Tests
         private static async Task<HttpResponseMessage> HttpResponseMessage(TestServer server, object body)
         {
             var content = Body(body);
+            var temp1 = server.CreateRequest("/api/widgets");
+
             var response =
                 await server.CreateRequest("/api/widgets").And(x => x.Content = content).PostAsync().ConfigureAwait(false);
             return response;
