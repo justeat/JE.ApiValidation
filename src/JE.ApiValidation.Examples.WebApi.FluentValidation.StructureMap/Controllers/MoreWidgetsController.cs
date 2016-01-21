@@ -5,11 +5,11 @@ using JE.ApiValidation.Examples.Widgets;
 
 namespace JE.ApiValidation.Examples.WebApi.FluentValidation.StructureMap.Controllers
 {
-    public class WidgetsController : ApiController
-    {
+    public class MoreWidgetsController : ApiController
+    { 
         private readonly IValidator<InternalRepresentationOfWidget> _businessRules;
 
-        public WidgetsController()
+        public MoreWidgetsController()
         {
             _businessRules = new BusinessRulesForWidgetProcessing();
         }
