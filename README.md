@@ -54,5 +54,10 @@ Please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 ### WebApi
 See the example in `src/JE.ApiValidation.Examples.WebApi`, and the tests for that in `src/JE.ApiValidation.Examples.Tests.WebApi`.
 
+#### WebApi with StructureMapValidatorFectory
+Register all implementations FluentValidation's AbstractValidators. These will then run automatically against any matching classes passed into ControllerActions.
+
+See the example in `src/JE.ApiValidation.Examples.WebApi.FluentValidation.StructureMap`, and the tests for that in `src/JE.ApiValidation.Examples.Tests.WebApi`.
+
 ### OpenRasta
 See the example in `src/JE.ApiValidation.Examples.OpenRasta`, and the tests for that in `src/JE.ApiValidation.Examples.Tests.OpenRasta`.
