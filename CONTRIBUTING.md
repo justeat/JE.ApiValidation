@@ -15,11 +15,13 @@ Note that the `JE.ApiValidation.DTOs` assembly is a contract that various client
 * CI should be green!
 
 ## Releases
-* CI should be green on master
-* Bump the version number in CI - follow [SemVer rules](http://semver.org)
-* Bump the version in appveyor.yml to match
-* Update the CHANGELOG.md
-* Run `release.ps1`
+
+Releases (and version bumps & related activity) happen from a clean, up-to-date `master` branch.
+
+* CI should be green on `master`
+* Bump the version number in [appveyor.yml] - follow [SemVer rules](http://semver.org)
+* Update the [CHANGELOG.md]
+* Run [release.ps1]
 ```shell
 ./release.ps1 -version 1.2.3
 ```
