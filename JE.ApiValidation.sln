@@ -5,11 +5,14 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{2EC480A8-BA7F-46D7-9BAB-0B1684A868F1}"
 	ProjectSection(SolutionItems) = preProject
-		Build.ps1 = Build.ps1
-		Generate-Configs.ps1 = Generate-Configs.ps1
+		appveyor.yml = appveyor.yml
+		CHANGELOG.md = CHANGELOG.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE = LICENSE
 		nuget.config = nuget.config
-		Package.ps1 = Package.ps1
+		project.sublime-project = project.sublime-project
 		README.md = README.md
+		release.ps1 = release.ps1
 		version.txt = version.txt
 	EndProjectSection
 EndProject
