@@ -47,8 +47,11 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StructureMapValidatorFactory.cs" />
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StructureMapValidatorFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="JE.ApiValidation.FluentValidation.StructureMap.nuspec" />
