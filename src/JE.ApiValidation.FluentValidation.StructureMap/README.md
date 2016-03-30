@@ -3,7 +3,7 @@
 
 When using FluentValidation you will likely have some classes along these lines:
 
-```
+```csharp
 public class YourClass 
 {
     public int Id {get; set;}
@@ -42,7 +42,7 @@ __1. Registering Validators in structuremap__
 
 Where you setup you Structuremap configuration at startup, ensure that the following settings are included:
 
-```
+```csharp
 var container = new Container(register =>
 {
     register.Scan(s =>
@@ -64,7 +64,7 @@ on each call.
 
 For a WebApi using Owin, the Startup.cs will look something like this:
 
-```
+```csharp
 [assembly: OwinStartup(typeof(Startup))]
 namespace MyWebApi
 {
