@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
+namespace JE.ApiValidation.Tests
 {
     public class RulesForRequest : AbstractValidator<Request>
     {

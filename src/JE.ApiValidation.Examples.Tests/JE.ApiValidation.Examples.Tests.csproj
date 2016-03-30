@@ -101,6 +101,7 @@
     </Compile>
     <Compile Include="OpenRasta\AgainstOpenRasta.cs" />
     <Compile Include="WebApi\AgainstWebApi.cs" />
+    <Compile Include="WebApi\AgainstWebApiWithStructureMap.cs" />
     <Compile Include="WhenMakingRequests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -119,9 +120,17 @@
       <Project>{39b4ae31-4638-48ee-9af8-480748783b99}</Project>
       <Name>JE.ApiValidation.Examples.OpenRasta</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JE.ApiValidation.Examples.WebApi.FluentValidation.StructureMap\JE.ApiValidation.Examples.WebApi.FluentValidation.StructureMap.csproj">
+      <Project>{53c1c878-32fb-42b9-bcfe-c1e52bf78b6b}</Project>
+      <Name>JE.ApiValidation.Examples.WebApi.FluentValidation.StructureMap</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JE.ApiValidation.Examples.WebApi\JE.ApiValidation.Examples.WebApi.csproj">
-      <Project>{FD248C4C-8786-46ED-BA62-EE705B76593F}</Project>
+      <Project>{fd248c4c-8786-46ed-ba62-ee705b76593f}</Project>
       <Name>JE.ApiValidation.Examples.WebApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JE.ApiValidation.FluentValidation.StructureMap\JE.ApiValidation.FluentValidation.StructureMap.csproj">
+      <Project>{34b7aa52-ae22-49c8-a093-1ed1dbaa2ef7}</Project>
+      <Name>JE.ApiValidation.FluentValidation.StructureMap</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

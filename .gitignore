@@ -9,6 +9,7 @@
 bin
 obj
 out
+.vs
 
 # Do not include actual packages as they will be extracted either on dev or on build system.
 packages/

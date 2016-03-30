@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ProjectConfiguration>
+  <AutoDetectNugetBuildDependencies>true</AutoDetectNugetBuildDependencies>
   <BuildPriority>1000</BuildPriority>
   <CopyReferencedAssembliesToWorkspace>false</CopyReferencedAssembliesToWorkspace>
   <ConsiderInconclusiveTestsAsPassing>false</ConsiderInconclusiveTestsAsPassing>

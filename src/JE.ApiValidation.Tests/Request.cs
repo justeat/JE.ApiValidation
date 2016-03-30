@@ -1,4 +1,4 @@
-namespace JE.ApiValidation.Tests.RequestValidity.OpenRasta
+namespace JE.ApiValidation.Tests
 {
     public class Request
     {

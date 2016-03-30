@@ -11,13 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>https://github.com/justeat/JE.ApiValidation/blob/master/CHANGELOG.md</releaseNotes>
-    <copyright>Copyright 2015</copyright>
-    <tags>je-apivalidation api validation webapi</tags>
-    <dependencies>
-      <dependency id="FluentValidation" version="5.6.2.0" />
-      <dependency id="FluentValidation.WebApi" version="5.6.2.0" />
-      <dependency id="Newtonsoft.Json" version="6.0.4" />
-      <dependency id="JE.ApiValidation.WebApi" version="$version$" />
-    </dependencies>
+    <copyright>Copyright 2016</copyright>
+    <tags>je-apivalidation api validation webapi structuremap</tags>
   </metadata>
 </package>

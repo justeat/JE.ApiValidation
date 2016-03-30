@@ -12,6 +12,13 @@ namespace JE.ApiValidation.Examples.Tests
 {
     public abstract class WhenMakingRequests<TApiStartup>
     {
+        /// <summary>
+        /// Use to differentiate between different Api projects and Controllers so tests don't get confused about what your trying to test
+        /// Needs to match the Controller you have setup in Startup.cs / MyWebApiConfiuguration.cs
+        /// </summary>
+        /// <returns></returns>
+        protected abstract string GetControllerName();
+
         [Test]
         public async void WhenValidShouldGet200Ok()
         {
@@ -53,11 +60,11 @@ namespace JE.ApiValidation.Examples.Tests
             }
         }
 
-        private static async Task<HttpResponseMessage> HttpResponseMessage(TestServer server, object body)
+        private async Task<HttpResponseMessage> HttpResponseMessage(TestServer server, object body)
         {
             var content = Body(body);
-            var response =
-                await server.CreateRequest("/api/widgets").And(x => x.Content = content).PostAsync().ConfigureAwait(false);
+
+            var response = await server.CreateRequest(string.Format("/api/{0}", GetControllerName())).And(x => x.Content = content).PostAsync().ConfigureAwait(false);
             return response;
         }
 
