@@ -5,6 +5,7 @@ The easier your PRs are to review and merge, the more likely your contribution w
 Note that the `JE.ApiValidation.DTOs` assembly is a contract that various clients will be depending on. Be very careful of breaking changes.
 
 ## Process
+
 * Work in a feature branch in a fork, PR to our master
 * One logical change per PR, please - do refactorings in separate PRs, ahead of your feature change(s)
 * Have [editorconfig plugin](http://editorconfig.org) for your editor(s) installed so that your file touches are consistent with ours and the diff is reduced.
@@ -20,11 +21,11 @@ Releases (and version bumps & related activity) happen from a clean, up-to-date 
 
 * CI should be green on `master`
 * Bump the version number in [appveyor.yml] - follow [SemVer rules](http://semver.org)
-* Update the [CHANGELOG.md]
-* Run [release.ps1]
-```shell
+* Update the [CHANGELOG.md] with the `major`.`minor`.`patch` entry (omit `build` - CI will produce a new build based on the tag that the release script is about to create)
+* Run [release.ps1] with the version that [appveyor.yml] now has
+```powershell
 ./release.ps1 -version 1.2.3
 ```
-* CI should
+* CI should, as a consequence of your running [release.ps1] above:
   * build the tag
   * push nuget packages to nuget.org
