@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,37 +40,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentValidation, Version=5.6.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FluentValidation.5.6.2.0\lib\Net45\FluentValidation.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\FluentValidation.5.6.2.0\lib\Net45\FluentValidation.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="OpenRasta, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\openrasta-core.2.5.23\lib\net40\OpenRasta.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\openrasta-core.2.5.23\lib\net40\OpenRasta.dll</HintPath>
     </Reference>
     <Reference Include="OpenRasta.Hosting.Owin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\openrasta-hosting-owin.0.0.13.0\lib\net45\OpenRasta.Hosting.Owin.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\openrasta-hosting-owin.0.0.13.0\lib\net45\OpenRasta.Hosting.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap, Version=3.1.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\structuremap.3.1.5.154\lib\net40\StructureMap.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\structuremap.3.1.5.154\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap.Net4, Version=3.1.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\structuremap.3.1.5.154\lib\net40\StructureMap.Net4.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\structuremap.3.1.5.154\lib\net40\StructureMap.Net4.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -94,6 +88,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\error-test.htm" />
+    <Content Include="Resources\error.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
