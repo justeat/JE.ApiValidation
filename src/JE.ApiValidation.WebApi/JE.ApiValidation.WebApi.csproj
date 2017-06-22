@@ -59,9 +59,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="JE.ApiValidation.WebApi.nuspec" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JE.ApiValidation.DTOs\JE.ApiValidation.DTOs.csproj">
