@@ -30,11 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentValidation, Version=5.6.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\FluentValidation.5.6.2.0\lib\Net45\FluentValidation.dll</HintPath>
+    <Reference Include="FluentValidation, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\FluentValidation.7.0.3\lib\net45\FluentValidation.dll</HintPath>
     </Reference>
     <Reference Include="OpenRasta, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\openrasta-core.2.5.23\lib\net40\OpenRasta.dll</HintPath>
+      <HintPath>..\..\..\packages\openrasta-core.2.5.1050\lib\net40\OpenRasta.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,10 +64,6 @@
       <Project>{C00E8762-A2EB-4D07-BDAF-9E41CA1ACAB4}</Project>
       <Name>JE.ApiValidation.Shared</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\error-test.htm" />
-    <Content Include="Resources\error.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
